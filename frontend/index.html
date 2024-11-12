@@ -1,0 +1,58 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Video PWA</title>
+    <!-- Bootstrap CSS -->
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-MauiHI4xdgwtgNLmG+4twb6WvxwEsvxaFXA6ewkXwAwSn8pF1XnT3XYBj7P6QQC8" 
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Scarica Video da YouTube</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="videoUrl" placeholder="Inserisci l'URL del video" aria-label="Video URL">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="downloadButton">Scarica</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="videoQuality">Qualità Video:</label>
+            <select class="form-control" id="videoQuality">
+                <option value="best">Migliore Disponibile</option>
+                <option value="1080p">1080p</option>
+                <option value="720p">720p</option>
+                <option value="480p">480p</option>
+                <option value="360p">360p</option>
+            </select>
+        </div>
+        <div id="status"></div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script 
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+        integrity="sha384-9/reFTGAW83EW2RDu6tQ32DIZF+8J3BJIGqyyVuqCmBq8P+Yhpa8mpwX8dTq05kF" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+        integrity="sha384-B4gt1jrGC7Jh4Agb1tE2aAJSlLkNd8gXqA37AuCkV3S1jmw5wciq7g2E4tL3WqP" 
+        crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

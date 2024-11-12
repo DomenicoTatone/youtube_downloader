@@ -1,0 +1,14 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Backend
+downloads/
+cookies.txt
+ffmpeg.exe
+ffplay.exe
+ffprobe.exe
+
+# Ambiente di sviluppo
+.env
